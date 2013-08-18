@@ -1,0 +1,225 @@
+<html>
+  <head>
+  </head>
+  <body>
+	<h1>
+	<center>
+	<font color="blue">
+		116 ACS MQF
+	</font>
+	</center>
+	</h1>
+
+	1. The ________ determines the crew structure and manning.
+	
+	<form>
+	<input type="radio" name="q1" id="a" value="a">A.) Air Surveillance Officer<br>
+	<input type="radio" name="q1" id="b" value="b">B.) Mission Crew Commander<br>
+	<input type="radio" name="q1" id="c" value="c">C.) Director of Operations<br>
+	<input type="radio" name="q1" id="d" value="d">D.) Air Surveillance Technician<br>
+	</form>
+	
+	2. Who is responsible for preparing the weekly operations schedule, which includes daily flying and other training events _____?
+
+	<form>
+	<input type="radio" name="q2" id="a" value="a">A.) Operations Superintendent<br>
+	<input type="radio" name="q2" id="b" value="b">B.) Operations Training (DOT)<br>
+	<input type="radio" name="q2" id="c" value="c">C.) Operations Stan Eval (CCV) <br>
+	<input type="radio" name="q2" id="d" value="d">D.) Maintenance Operations Center (MOC)<br>
+	</form>
+
+	3. What two surveillance positions are required, at a minimum, to build, establish and monitor live data link missions?
+
+	<form>
+	<input type="radio" name="q3" id="a" value="a">A.) ICT/EPT<br>
+	<input type="radio" name="q3" id="b" value="b">B.) ICT/AST<br>
+	<input type="radio" name="q3" id="c" value="c">C.) ICT/DST <br>
+	<input type="radio" name="q3" id="d" value="d">D.) ICT/ST<br>
+	</form>
+
+	4. During live and/or simulated missions, if Electronic Attack (EA) is encountered who does the on-duty EPT report to?
+
+	<form>
+	<input type="radio" name="q4" id="a" value="a">A.) MCC<br>
+	<input type="radio" name="q4" id="b" value="b">B.) SD<br>
+	<input type="radio" name="q4" id="c" value="c">C.) DO<br>
+	<input type="radio" name="q4" id="d" value="d">D.) ASO/AST<br>
+	</form>
+
+	5. Who will ensure that the Operations Logbook is properly maintained?
+
+	<form>
+	<input type="radio" name="q5" id="a" value="a">A.) CC<br>
+	<input type="radio" name="q5" id="b" value="b">B.) DO<br>
+	<input type="radio" name="q5" id="c" value="c">C.) Operations Superintendent<br>
+	<input type="radio" name="q5" id="d" value="d">D.) Operation Training NCO<br>
+	</form>
+
+	6. What is the official record of events that occur during any live, simulated or data link exercise?
+
+	<form>
+	<input type="radio" name="q6" id="a" value="a">A.) AF Form 4145, Daily Activity Log<br>
+	<input type="radio" name="q6" id="b" value="b">B.) AF Form 4146, Mission Briefing Guide<br>
+	<input type="radio" name="q6" id="c" value="c">C.) Operations Logbook<br>
+	<input type="radio" name="q6" id="d" value="d">D.) Operations Equipment Activity Report<br>
+	</form>
+
+	7. The Air Surveillance Officer (ASO), or Air Surveillance Technician (AST) if there is no ASO, is responsible to the _____________ for overall crew supervision and performance during an assigned shift.
+
+	<form>
+	<input type="radio" name="q7" id="a" value="a">A.) Mission Crew Commander (MCC)<br>
+	<input type="radio" name="q7" id="b" value="b">B.) Joint Forces Commander (JFC)<br>
+	<input type="radio" name="q7" id="c" value="c">C.) Surveillance Technician (ST)<br>
+	<input type="radio" name="q7" id="d" value="d">D.) Senior Director (SD)<br>
+	</form>
+
+	8. The Air Surveillance Officer (ASO) maintains overall responsibility for the management of the air surveillance section and ________ functions at a CRC.
+
+	<form>
+	<input type="radio" name="q8" id="a" value="a">A.) Weapons<br>
+	<input type="radio" name="q8" id="b" value="b">B.) Battle management<br>
+	<input type="radio" name="q8" id="c" value="c">C.) Data link<br>
+	<input type="radio" name="q8" id="d" value="d">D.) Operations support<br>
+	</form>
+
+	9. Who ensures the system is capable of supporting battle management, weapons, air surveillance, and data link requirements?
+
+	<form>
+	<input type="radio" name="q9" id="a" value="a">A.) DST<br>
+	<input type="radio" name="q9" id="b" value="b">B.) AST<br>
+	<input type="radio" name="q9" id="c" value="c">C.) SD<br>
+	<input type="radio" name="q9" id="d" value="d">D.) MCC<br>
+	</form>
+
+	10. What operations form must be submitted to DOT to ensure all training time (positional hours, link events & controlled missions) is logged properly in LMS?
+
+	<form>
+	<input type="radio" name="q10" id="a" value="a">A.) AF FORM 4143<br>
+	<input type="radio" name="q10" id="b" value="b">B.) AF FORM 4145<br>
+	<input type="radio" name="q10" id="c" value="c">C.) AF FORM 4146<br>
+	<input type="radio" name="q10" id="d" value="d">D.) AF FORM 4147<br>
+	</form>
+
+
+
+	</br>
+	<button id="Grade">Grade</button>
+
+	<script>
+	var button = document.getElementById("Grade");
+	
+	button.onclick = function()
+	{
+		var score = 0;
+
+		var q1 = document.getElementsByName("q1");
+		if(q1[2].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 1 incorrect");
+		}
+
+		var q2 = document.getElementsByName("q2");
+		if(q2[1].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 2 incorrect");
+		}
+
+		var q3 = document.getElementsByName("q3");
+		if(q3[3].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 3 incorrect");
+		}
+
+		var q4 = document.getElementsByName("q4");
+		if(q4[3].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 4 incorrect");
+		}
+
+		var q5 = document.getElementsByName("q5");
+		if(q5[1].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 5 incorrect");
+		}
+
+		var q6 = document.getElementsByName("q6");
+		if(q6[2].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 6 incorrect");
+		}
+
+		var q7 = document.getElementsByName("q7");
+		if(q7[0].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 7 incorrect");
+		}
+
+		var q8 = document.getElementsByName("q8");
+		if(q8[2].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 8 incorrect");
+		}
+
+		var q9 = document.getElementsByName("q9");
+		if(q9[3].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 9 incorrect");
+		}
+
+		var q10 = document.getElementsByName("q10");
+		if(q10[1].checked)
+		{
+			score++;
+		}
+		else
+		{
+			alert("Question 10 incorrect");
+		}
+
+
+		alert("Score = " + (score/10 * 100) + "%");
+		
+	}
+	</script>
+
+		
+
+
+  </body>
+</html>
